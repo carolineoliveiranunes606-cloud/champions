@@ -1,26 +1,32 @@
 {
-  "name": "projeto-champions",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "champions-modern-api",
+  "version": "2.0.0",
+  "description": "Modern Champions League API with Express and TypeScript",
+  "main": "dist/server.js",
   "scripts": {
-    "dist": "tsup src",
-    "start:dev": "tsx --env-file=.env src/server.ts",
-    "start:watch": "tsx watch --env-file=.env  src/server.ts",
-    "start:dist": "npm run dist && node dist/src/index.js"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src",
+    "start": "node dist/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/cors": "^2.8.17",
-    "@types/express": "^4.17.21",
-    "tsup": "^8.0.2",
-    "tsx": "^4.7.1",
-    "typescript": "^5.4.3"
-  },
+  "keywords": [
+    "champions",
+    "football",
+    "nodejs",
+    "typescript",
+    "express"
+  ],
+  "author": "Felipe",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
   }
 }
